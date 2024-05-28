@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-gradient-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent),
+                linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent),
+                linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
+}
