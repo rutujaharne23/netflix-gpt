@@ -4,6 +4,8 @@ export const BACKGROUND_IMAGE = "https://assets.nflxext.com/ffe/siteui/vlv3/a996
 
 export const USER_AVATAR = "https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.webp";
 
+export const CDN_IMAGE_URL = "https://image.tmdb.org/t/p/w780";
+
 export const API_OPTIONS = {
     method: 'GET',
     headers: {

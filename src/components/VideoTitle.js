@@ -1,8 +1,9 @@
 export const VideoTitle = ({ title, overview }) => {
-    return (
-      <div className="absolute top-1/2 left-16 w-1/3 text-white z-10">
-        <h1 className="text-4xl font-bold">{title}</h1>
-        <p className="line-clamp-3 text-m pt-5">{overview}</p>
+  return (
+    <div className="w-screen aspect-video pt-[13%] px-6 md:px-24 absolute text-white bg-gradient-to-r from-black">
+      <h1 className="text-2xl md:text-4xl font-bold w-1/3">{title}</h1>
+      <p className="line-clamp-3 text-m pt-5 w-1/3">{overview}</p>
+      <div className="my-4 md:m-0">
         <div className="flex pt-4">
           <button className="bg-white text-black px-3 py-1 flex items-center mr-4 text-lg font-semibold rounded-sm hover:bg-opacity-80">
             <span className="mr-2">&#11208;</span> Play Now
@@ -12,6 +13,6 @@ export const VideoTitle = ({ title, overview }) => {
           </button>
         </div>
       </div>
-    );
-  };
-  
+    </div>
+  );
+};

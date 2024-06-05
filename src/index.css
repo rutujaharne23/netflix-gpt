@@ -8,3 +8,7 @@
                 linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent),
                 linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
 }
+
+body {
+    overflow-x: hidden;
+}
