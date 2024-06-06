@@ -5,13 +5,12 @@ export const SecondaryContainer = () => {
     const movies = useSelector(store => store.movies);
 
     return (
-        movies.nowPlayingMovies && (<div className="bg-black">
-            <div className="-mt-28 relative z-20">
+        (movies.nowPlayingMovies || movies.popularMovies || movies.topRatedMovies) && (<div className="bg-black">
+            <div className="-mt-28 relative z-20 pb-10">
                 <MovieList title={"Now Playing"} movies={movies.nowPlayingMovies} />
-                <MovieList title={"Popular"} movies={movies.nowPlayingMovies} />
-                <MovieList title={"Top Rated"} movies={movies.nowPlayingMovies} />
-                <MovieList title={"Now Playing3"} movies={movies.nowPlayingMovies} />
-                <MovieList title={"Now Playing4"} movies={movies.nowPlayingMovies} />
+                <MovieList title={"Popular"} movies={movies.popularMovies} />
+                <MovieList title={"Top Rated"} movies={movies.topRatedMovies} />
+                <MovieList title={"Upcoming"} movies={movies.upcomingMovies} />
             </div>
         </div>)
     );

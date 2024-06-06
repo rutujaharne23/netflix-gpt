@@ -1,6 +1,6 @@
 export const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="w-screen aspect-video pt-[13%] px-6 md:px-24 absolute text-white bg-gradient-to-r from-black">
+    <div className="w-screen aspect-video pt-[13%] px-6 md:px-16 absolute text-white bg-gradient-to-r from-black">
       <h1 className="text-2xl md:text-4xl font-bold w-1/3">{title}</h1>
       <p className="line-clamp-3 text-m pt-5 w-1/3">{overview}</p>
       <div className="my-4 md:m-0">
